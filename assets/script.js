@@ -26,7 +26,8 @@ function sproutArray(seed) {
  
     const a = (7n**5n);                                      
     const M = ((2n**31n)-1n);
-    var oldI = BigInt(seed);
+    var dx = performance.now();
+    var oldI = BigInt(seed+Math.trunc(dx));
     var newI;
 
     const devArray = [];
